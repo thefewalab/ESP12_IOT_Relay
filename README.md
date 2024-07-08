@@ -53,5 +53,5 @@ Usage
 
   2. Access the Web Interface
 
-    Open a web browser and navigate to 192.168.4.1 (default IP address for the ESP8266 AP).
+    Open a web browser and navigate to IP address of the ESP8266 AP. (default IP address for ESP8266 AP is 192.168.4.1)
     The web interface will load, allowing you to control the relay connected to your household appliance.
