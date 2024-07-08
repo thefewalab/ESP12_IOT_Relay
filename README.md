@@ -5,6 +5,7 @@
 This project is an IoT-based home automation system using an ESP8266 microcontroller and a single relay module. The relay is controlled via a web interface and the file system is managed using LittleFS. This system allows you to control a household or industrial appliance such as a light, fan, or air conditioner from a web browser.
 
 Hardware Requirements
+
     * ESP8266 microcontroller (I used the ESP-12E module)
     * Single relay module
     * Household appliance (e.g., bulb, fan, air conditioner)
