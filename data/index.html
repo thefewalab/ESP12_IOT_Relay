@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Automation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <script src="jquery-3.7.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <!-- Your HTML content -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <h1>Automation System</h1>
+        </ul>
+    </nav>
+    <div class="controls">
+        <div class="wrap">
+        <b class="label-title">Relay</b>
+        <label class="switch">
+        <input type="checkbox" id="bulb">
+        <span class="slider round"></span>
+        </label>
+    </div>
+    </div>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved
+        </p>
+    </footer>
+    <script>
+        $( "#bulb" ).on( "click", function() {
+            var bulb_c = $("#bulb").is(":checked");
+            var url = 'bulb-' + bulb_c;
+            $.ajax({
+                url : url,
+                type : 'GET',
+                success : function(data) {              
+                    console.log('button clicked!');
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>

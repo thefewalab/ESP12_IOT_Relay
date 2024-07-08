@@ -1,0 +1,158 @@
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    color: #d2e4d5ef;
+    text-align: center;
+    text-shadow: #555;
+}
+
+h2 {
+    color: #252323ef;
+    text-align: center;
+    font-size: larger;
+
+}
+
+p {
+    color: #212020;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #4b9255;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar .nav-list {
+    list-style: none;
+    padding: auto;
+    margin: auto;
+}
+
+.navbar .nav-list .logo img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+
+
+/* Control Panel Styles */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+    margin: auto;
+    position:relative;
+    
+    
+}
+
+.wrap{
+    height: 40px;
+    width: 120px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    border:2px solid #b2b2b2;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+
+
+
+.label-title {
+    margin-right: 10px;
+    font-weight: bold;
+
+}
+
+/* Switch Styles */
+.switch {
+    position: relative;
+    display: inline-block; 
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #0a7a1bef;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Signal Input Styles */
+.txt input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #4b9255;
+    color: white;
+    text-align: center;
+    padding: auto;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+   
+}
